@@ -1,0 +1,195 @@
+/* Reset */
+body{
+    margin: 0px auto;
+    padding: 0px;
+}
+
+/* MySocial */  /* Coluna 1 */
+.mySocial {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-areas:
+        'mySocial-background mySocial-coluna2';
+}
+
+.mySocial-background{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; 
+    grid-area: mySocial-background;
+}
+
+.mySocial-container {
+   width: 700px;
+   margin: 0 auto;
+}
+
+.mySocial-logo {
+    position: absolute;
+    top: 10px;
+}
+
+.mySocial-paragrafos {
+    position: absolute;
+    top: 25px;
+    margin-left: 55px;
+}
+
+.mySocial-paragrafos p {
+    display: inline;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+.mySocial-paragrafoMylogo {
+    font-size: 1.07em;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.mySocial-paragrafoSocial {
+    font-size: 1.07em;
+    font-weight: 400;
+    left: 3px;
+}
+
+.animated {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.mySocial-animate {
+    position: absolute;
+    max-width: 670px;
+    top: 150px;
+}
+
+.mySocial-animate h1, .mySocial-animate p, .mySocial-animate button {
+    color: #fff; 
+    font-family: 'Open Sans', sans-serif;
+}
+
+.mySocial-animate h1 {
+    font-weight: bold;
+    font-size: 3.9em;
+}
+
+.mySocial-animate p {
+    font-size: 0.9em;
+    opacity: 0.8;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    line-height: 1.9;
+}
+.mySocial-animate button {
+    width: 190px;
+    height: 55px;
+    border: 3px solid #FFF;
+    background-color: transparent;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;  
+}
+
+.mySocial-animate button:hover {
+    background: #fff;
+    color: #08365C;
+    font-weight: 700;
+    -webkit-transition-duration: 0.5; /* Safari */
+    transition-duration: 0.5s;
+}
+.animated slideInLeft {
+    webkit-animation-duration: 15s;
+    -vendor-animation-duration: 15s;
+}
+
+@media (min-width: 740px) and (max-width: 980px){
+    .mySocial-container {
+       width: 400px;
+       margin: 0 auto;
+    }
+    .mySocial-animate p {
+       max-width: 420px; 
+    }
+}
+
+@media (max-width: 739px) {
+    .mySocial-container {
+       width: 250px;
+       margin: 0 auto;
+    }
+    .mySocial-animate p {
+       max-width: 250px;
+       font-size: 0.9em;   
+    }
+    .mySocial-animate h1 {
+        font-size: 3.5em;
+        margin-right: 10px;
+    }
+}
+/* MySocial */ /* Coluna 2 */
+.mySocial-coluna2 {
+    grid-area: mySocial-coluna2;
+    flex-direction: column;
+}
+
+.mySocial-coluna2 h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5em;
+    font-weight:bold;
+    color: #707070;
+    margin-top: 140px;
+}
+@font-face{
+    font-family: 'Open Sans', sans-serif;
+    src: url('https://fonts.googleapis.com/css?family=Open+Sans');
+}
+
+.mySocial-coluna2-labelLembrar {
+    font-size: 1.35em;
+}
+
+.mySocial-coluna2-lembrar {
+    color: #707070;
+    font-size: 0.875em;
+}
+
+.mySocial-coluna2-esqueceu {
+    color: #707070;
+    opacity: 0.8;
+    margin-left: 7px;
+    font-size: 0.9em;
+}
+
+/* Botão */
+.mySocial-coluna2-btn-entrar {
+    width: 100%;
+    height: 45px;
+    color: #FFF;
+    background-color: #08365C;
+    border: none;
+    margin-top: 34px;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+.mySocial-coluna2-btn-entrar:hover {
+    cursor: pointer;
+    background-color: #05223B;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5;
+}
+
+.mySocial-coluna2-cadastre, .mySocial-coluna2-login {
+    color: #08365C;
+    font-weight: 700;
+    margin-left: 3px;
+}
+

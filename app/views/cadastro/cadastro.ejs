@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro - My Social</title>
+    <link rel="icon" href="img/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="mySocial">
+        <img class="mySocial-background" src="img/bg.jpg" alt="My Social">
+        
+        <div class="mySocial-container">
+            <div class="mySocial-logo">
+                <img src="img/logo.png" alt="My Social logo">
+            </div>
+            <div class="mySocial-paragrafos">
+                <p class="mySocial-paragrafoMylogo">My logo</p><p class="mySocial-paragrafoSocial">Social</p> 
+            </div>      
+           <div class="mySocial-animate">
+                <h1>Olá Mundo!</h1> 
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed est a elit imperdiet blandit. 
+                Mauris ac fringilla nunc. Maecenas eu tellus non lacus pharetra venenatis eu quis dolor.
+                Donec lacinia, leo vitae egestas accumsan, ipsum elit lacinia purus, non ullamcorper nisi nunc nec ipsum. 
+                </p> 
+                <button class="" type="button">Leia mais</button>       
+           </div>
+        </div>
+        
+        <div class="mySocial-coluna2 container">
+            <div class="row">
+                    <form class="col s11" action="/dashboard">
+                       <h1 class="titulo">Cadastro</h1>
+                            <div class="input-field">
+                                <input id="nome" type="text">
+                                <label for="nome">Nome completo</label>
+                            </div>
+                            <div class="input-field">
+                                <input id="email" type="email">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="input-field">
+                                <input id="password" type="password" class="validate">
+                                <label for="password">Senha</label>
+                            </div>
+                             <div class="input-field">
+                                <input id="password-confirmed" type="password" class="validate">
+                                <label for="password-confirmed">Confirme sua senha</label>
+                            </div>
+                            <input type="submit" class="mySocial-coluna2-btn-entrar" value="Entrar">
+                            
+                            <p>Já possui uma conta?<a href="/login" class="mySocial-coluna2-login">Login</a></p> 
+                            
+                    </form>
+                </div>
+        </div>
+    </section>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materializa.min.js"s></script>
+     <script>
+        $(document).ready(function(){
+            $('.mySocial-animate').addClass('animated slideInLeft');
+            $('.mySocial-coluna2').addClass('animated fadeInDown');
+        }); 
+    </script>
+</body>
+</html>
