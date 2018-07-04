@@ -7,14 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>DataTables | Gentelella</title>
+    <title>Tabela | My logo Social</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
     
+    <link href="css/light.css">
 
     <!-- Custom Theme Style -->
     <link href="css/custom.min.css" rel="stylesheet">
@@ -26,7 +26,7 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentelella Alela!</span></a>
+              <a href="/dashboard" class="site_title"><img src="img/logo.png" class="imgLogo "><span>My Logo Social</span></a>
             </div>
 
             <div class="clearfix"></div>
@@ -49,7 +49,7 @@
                 <ul class="nav side-menu">
                   <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="tables_dynamic.html"><i class="fa fa-book"></i> Livros </a></li>
+                      <li><a href="/tabela"><i class="fa fa-book"></i> Livros </a></li>
                     </ul>
                   </li>
                 </ul>
@@ -91,9 +91,9 @@
               <div class="title_right">
                 <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
                   <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search for...">
+                    <input type="text" class="form-control" placeholder="Pesquisar...">
                     <span class="input-group-btn">
-                      <button class="btn btn-default" type="button">Go!</button>
+                      <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
                     </span>
                   </div>
                 </div>
@@ -108,6 +108,7 @@
                   <div class="x_title">
                     <h2>Listagem de todos os livros</h2>
                     <ul class="nav navbar-right panel_toolbox">
+                        <button class="btn-adicionarLivro" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i>Add Livro</button>
                     </ul>
                     <div class="clearfix"></div>
                   </div>
@@ -124,7 +125,6 @@
                         </tr>
                       </thead>
 
-
                       <tbody>
                         <tr>
                           <td>Tiger Nixon</td>
@@ -132,111 +132,13 @@
                           <td>Edinburgh</td>
                           <td>61</td>
                           <td>2011/04/25</td>
-                          <td>$320,800</td>
-                        </tr>
-                        <tr>
-                          <td>Garrett Winters</td>
-                          <td>Accountant</td>
-                          <td>Tokyo</td>
-                          <td>63</td>
-                          <td>2011/07/25</td>
-                          <td>$170,750</td>
-                        </tr>
-                        <tr>
-                          <td>Charde Marshall</td>
-                          <td>Regional Director</td>
-                          <td>San Francisco</td>
-                          <td>36</td>
-                          <td>2008/10/16</td>
-                          <td>$470,600</td>
-                        </tr>
-                        <tr>
-                          <td>Haley Kennedy</td>
-                          <td>Senior Marketing Designer</td>
-                          <td>London</td>
-                          <td>43</td>
-                          <td>2012/12/18</td>
-                          <td>$313,500</td>
-                        </tr>
-                        <tr>
-                          <td>Tatyana Fitzpatrick</td>
-                          <td>Regional Director</td>
-                          <td>London</td>
-                          <td>19</td>
-                          <td>2010/03/17</td>
-                          <td>$385,750</td>
-                        </tr>
-                        <tr>
-                          <td>Michael Silva</td>
-                          <td>Marketing Designer</td>
-                          <td>London</td>
-                          <td>66</td>
-                          <td>2012/11/27</td>
-                          <td>$198,500</td>
-                        </tr>
-                        <tr>
-                          <td>Bradley Greer</td>
-                          <td>Software Engineer</td>
-                          <td>London</td>
-                          <td>41</td>
-                          <td>2012/10/13</td>
-                          <td>$132,000</td>
-                        </tr>
-                        <tr>
-                          <td>Dai Rios</td>
-                          <td>Personnel Lead</td>
-                          <td>Edinburgh</td>
-                          <td>35</td>
-                          <td>2012/09/26</td>
-                          <td>$217,500</td>
-                        </tr>
-                        <tr>
-                          <td>Jenette Caldwell</td>
-                          <td>Development Lead</td>
-                          <td>New York</td>
-                          <td>30</td>
-                          <td>2011/09/03</td>
-                          <td>$345,000</td>
-                        </tr>
-                        <tr>
-                          <td>Yuri Berry</td>
-                          <td>Chief Marketing Officer (CMO)</td>
-                          <td>New York</td>
-                          <td>40</td>
-                          <td>2009/06/25</td>
-                          <td>$675,000</td>
-                        </tr>
-                        <tr>
-                          <td>Caesar Vance</td>
-                          <td>Pre-Sales Support</td>
-                          <td>New York</td>
-                          <td>21</td>
-                          <td>2011/12/12</td>
-                          <td>$106,450</td>
-                        </tr>
-                        <tr>
-                          <td>Doris Wilder</td>
-                          <td>Sales Assistant</td>
-                          <td>Sidney</td>
-                          <td>23</td>
-                          <td>2010/09/20</td>
-                          <td>$85,600</td>
-                        </tr>
-                        <tr>
-                          <td>Angelica Ramos</td>
-                          <td>Chief Executive Officer (CEO)</td>
-                          <td>London</td>
-                          <td>47</td>
-                          <td>2009/10/09</td>
-                          <td>$1,200,000</td>
-                        </tr>
-                        <tr>
-                          <td>Gavin Joyce</td>
-                          <td>Developer</td>
-                          <td>Edinburgh</td>
-                          <td>42</td>
-                          <td>2010/12/22</td>
-                          <td>$92,575</td>
+                          <td>
+
+                                <div class="editTrash">
+                                    <button type="button" class="btn btn-default btn-sm" title="Editar" data-tippy-theme= "light"><i class="fa fa-edit"></i></button>
+                                    <button type="button" class="btn btn-default btn-sm" title="Excluir"><i class="fa fa-trash"></i></button>
+                                </div>
+                          </td>
                         </tr>
                       </tbody>
                     </table>
@@ -246,12 +148,45 @@
             </div>
           </div>
         </div>
-        <!-- /page content -->
+        <!-- Modal -->
+        <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Cadastrar Livro</h4>
+                    </div>
+                    <div class="modal-body">
+                         <form>
+                           <div class="form-group">
+                                <label>Titulo</label>
+                                <input type="text" class=" form-control">
+                           </div>
+                            <div class="form-group">
+                               <label>Autor</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>ISBN</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                               <label>Editora</label>
+                                <input type="text" class="form-control">
+                            </div>
+                         </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-salvar">Salvar</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
 
         <!-- footer content -->
         <footer>
           <div class="pull-right">
-            Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+            My Logo Social &copy; Todos os direitos reservados.
           </div>
           <div class="clearfix"></div>
         </footer>
@@ -269,10 +204,16 @@
     <script src="../vendors/nprogress/nprogress.js"></script>
     <!-- iCheck -->
     <script src="../vendors/iCheck/icheck.min.js"></script>
-    
-
+    <script src="js/tippy.all.min.js"></script>
     <!-- Custom Theme Scripts -->
     <script src="/js/custom.min.js"></script>
-
+    <script>
+        tippy('.btn', {
+            placement: 'bottom',
+            animation: 'shift-away',
+            arrow: false,
+            size: 'regular'
+        });
+    </script>
   </body>
 </html>
