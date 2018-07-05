@@ -1,5 +1,5 @@
 module.exports = function(app) {
   app.get('/tabela',(req, res) => {
-    res.render("tabela/tabela");
+    app.app.controllers.tabela.tabela(app, req, res);
   });
 };

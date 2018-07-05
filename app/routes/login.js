@@ -1,11 +1,6 @@
 module.exports = function(app) {
-    
     app.get('/login',(req, res) => {
-    res.render("login/login");
+        app.app.controllers.login.login(app, req, res);
     });
-    
-    app.post('/dashboard',(req, res) => {
-    res.sender("ok");
-    });
-    
+     
 };
